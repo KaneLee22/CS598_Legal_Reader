@@ -1,0 +1,68 @@
+:root {
+  --bg: #f3f1ec;
+  --card: #fffdf8;
+  --card-muted: #fbf8f1;
+  --ink: #18232d;
+  --slate: #4f5d68;
+  --muted: #6f7a83;
+  --line: #d9d4c9;
+  --line-strong: #c9c2b5;
+  --accent: #2f766d;
+  --accent-dark: #1f5f58;
+  --accent-soft: #dcebe6;
+  --amber: #8a5b1f;
+  --amber-soft: #f5ead2;
+  --danger: #8d3f34;
+  --danger-soft: #f5dfdc;
+  --shadow-sm: 0 8px 24px rgba(39, 44, 48, 0.07);
+  --shadow-md: 0 18px 58px rgba(39, 44, 48, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--bg);
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 8% 6%, rgba(47, 118, 109, 0.12), transparent 30rem),
+    radial-gradient(circle at 92% 0%, rgba(138, 91, 31, 0.08), transparent 26rem),
+    linear-gradient(135deg, #f7f5ef 0%, #ece8df 100%);
+}
+
+button,
+textarea,
+input {
+  font: inherit;
+}
+
+button:focus-visible,
+textarea:focus-visible,
+input:focus-visible,
+[role='button']:focus-visible {
+  outline: 3px solid rgba(47, 118, 109, 0.24);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: rgba(47, 118, 109, 0.22);
+}
+
+.reader-workspace {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr) minmax(280px, 0.9fr);
+  gap: 18px;
+  align-items: start;
+  margin-top: 26px;
+}
+
+@media (max-width: 1180px) {
+  .reader-workspace {
+    grid-template-columns: 1fr;
+  }
+}
