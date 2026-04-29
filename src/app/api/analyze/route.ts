@@ -6,7 +6,7 @@ import { validateAnalysisResult } from '../../../lib/validateAnalysisResult'
 import type { AnalysisResult } from '../../../lib/types'
 
 const MAX_TEXT_LENGTH = 4000
-const DEFAULT_MODEL = 'gpt-4o-mini'
+const DEFAULT_MODEL = 'gpt-5.5'
 
 type AnalyzeRequestBody = {
   text?: unknown

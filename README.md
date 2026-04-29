@@ -95,7 +95,7 @@ npm run build
 
 ```env
 OPENAI_API_KEY=your_api_key_here
-OPENAI_MODEL=your_model_here
+OPENAI_MODEL=gpt-5.5
 ```
 
 `OPENAI_API_KEY` is used only in the server-side API route. It must not be exposed to client code.
